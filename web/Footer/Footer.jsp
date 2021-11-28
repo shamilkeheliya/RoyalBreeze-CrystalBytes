@@ -7,11 +7,29 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+    
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="stylesheet" type="text/css" href="footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     </head>
+    
     <body>
-        <h1>Hello World!</h1>
+      <%-- footer begins --%>
+      
+    <div class="footerMain">
+          
+        <div class="footerContainer">
+            
+        </div>
+      
+      <%-- coppyright text --%>  
+    <div class="Copyright" >
+        <p> &copy; RoyalBreez - 2021 All Rights Reserved. </p>
+    </div>
+    
+    </div>
+        
     </body>
 </html>

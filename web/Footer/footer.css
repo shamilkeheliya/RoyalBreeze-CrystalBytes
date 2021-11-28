@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26-Nov-2021, 18:35:52
+    Author     : IsuraD
+*/
+
+.footerMain{
+    /*background-color: #000032;*/
+    border:1px solid black;
+    width: 100%;
+    height: 300px
+}
+
+.footerContainer{
+    
+}
+
+.Copyright{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    border:1px solid black;
+    height: 40px;
+    width: 100%;
+}
