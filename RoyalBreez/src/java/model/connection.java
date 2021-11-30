@@ -1,14 +1,40 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
 
-/**
- *
- * @author ASUS
- */
+import static java.lang.System.out;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 public class connection {
+    
+    public Connection createConnection () throws ClassNotFoundException, SQLException
+    {
+        boolean errorChecker = false;
+        Connection conn = null;
+        
+        try
+        {
+            Class.forName("com.mysql.jdbc.Driver");
+        }
+        catch (Exception ex)
+        {
+            out.println("Error: "+ex);
+            errorChecker = true;
+        }
+        
+        if(!errorChecker)
+        {
+            try
+            {
+                conn = DriverManager.getConnection("jdbc:mysql://localhost/test","root","");               
+                out.println("Connention Success!!!!!!!!!!");
+            }
+            catch (Exception ex)
+            {
+                out.println("Error: "+ex);
+            }
+        }        
+        return conn;
+    }
     
 }
