@@ -27,8 +27,7 @@ public class connection {
         {
             try
             {
-              //  conn = DriverManager.getConnection("jdbc:mysql://localhost/test","root","");  
-                conn = DriverManager.getConnection("jdbc:mysql://localhost/secodek6_java?useSSL=false","secodek6_shamil","123456");
+                conn = DriverManager.getConnection("jdbc:mysql://localhost/test","root","");
                 out.println("Connention Success!!!!!!!!!!");
             }
             catch (Exception ex)
