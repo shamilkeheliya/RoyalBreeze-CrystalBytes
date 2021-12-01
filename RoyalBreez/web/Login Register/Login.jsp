@@ -94,7 +94,7 @@ width: 100%;
 			<tr class="tableheader">
 				<td align="center" colspan="2"><input type="submit" name="submit" value="Submit" class="btnSubmit"></td>
 			</tr
-                        <tr><td><p><a href="#">Don't have an account?</a></p></td></tr>
+                        <tr><td><p><a href="Register.jsp">Don't have an account?</a></p></td></tr>
 		</table>
 </form>
 

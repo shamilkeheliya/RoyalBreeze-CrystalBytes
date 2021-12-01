@@ -17,6 +17,7 @@ public class connection {
             Class.forName("com.mysql.jdbc.Driver");
         }
         catch (Exception ex)
+            
         {
             out.println("Error: "+ex);
             errorChecker = true;
@@ -26,7 +27,8 @@ public class connection {
         {
             try
             {
-                conn = DriverManager.getConnection("jdbc:mysql://localhost/test","root","");               
+              //  conn = DriverManager.getConnection("jdbc:mysql://localhost/test","root","");  
+                conn = DriverManager.getConnection("jdbc:mysql://localhost/secodek6_java?useSSL=false","secodek6_shamil","123456");
                 out.println("Connention Success!!!!!!!!!!");
             }
             catch (Exception ex)

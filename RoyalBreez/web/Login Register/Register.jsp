@@ -156,23 +156,23 @@ fieldset {
             <input name="lname" placeholder="Last Name" type="text" tabindex="2" required autofocus>
           </fieldset>  
           <fieldset>
-            <input name="email" placeholder="Your Email Address" type="email" tabindex="7" required>
+            <input name="email" placeholder="Your Email Address" type="email" tabindex="3" required>
           </fieldset>
           <fieldset>
             <input name="password" placeholder="   Password" type="password" tabindex="4" required autofocus class="hold">
           </fieldset>
           <fieldset>
-            <input name="mobile" placeholder="Your Phone Number" type="tel" tabindex="8" required>
+            <input name="mobile" placeholder="Your Phone Number" type="tel" tabindex="5" required>
           </fieldset>
           <fieldset>
-            <input name="country" placeholder="Your Country" type="text" tabindex="9" required autofocus>
+            <input name="country" placeholder="Your Country" type="text" tabindex="6" required autofocus>
           </fieldset>
           <br>
 
           <fieldset>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
           </fieldset>
-          <a href="#" id="al">Already have an account?</a>
+          <a href="Login.jsp" id="al">Already have an account?</a>
         </form>
     </div>
 </body>
