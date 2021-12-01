@@ -278,7 +278,7 @@ input.error{
     </head>
     <body>
       <div class="container">  
-  <form id="contact" action="" method="post">
+  <form id="contact" action="./ContactUsServlet" method="post">
     <h3>Contact Us</h3>
     <h4>Contact us today!</h4>
     <fieldset>
