@@ -5,12 +5,14 @@
  */
 package controller;
 
+import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.connection;
 
 /**
  *
@@ -78,6 +80,23 @@ public class ContactUsServlet extends HttpServlet {
      *
      * @return a String containing servlet description
      */
+    
+     String name = request.getParameter("name");
+     String email = request.getParameter("email");
+     String message = request.getParameter("message");
+        
+        try {
+               connection con=new connection();
+               boolean rslt=con.#(name, email,message);
+               if(rslt==true)
+                   out.println("your message send successfully");
+                  else
+                   out.println("sending failed");
+
+           }
+        catch(Exception se) {
+            se.printStackTrace();
+        }
     @Override
     public String getServletInfo() {
         return "Short description";
