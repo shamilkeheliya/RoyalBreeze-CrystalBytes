@@ -5,13 +5,13 @@
  */
 package controller;
 
-import static com.sun.corba.se.spi.presentation.rmi.StubAdapter.request;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.sql.*;
 import model.connection;
 
 /**
@@ -73,8 +73,8 @@ public class ContactUsServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
-    }
-
+         
+    
     /**
      * Returns a short description of the servlet.
      *
@@ -102,4 +102,5 @@ public class ContactUsServlet extends HttpServlet {
         return "Short description";
     }// </editor-fold>
 
+}
 }
