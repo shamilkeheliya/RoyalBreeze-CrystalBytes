@@ -77,7 +77,7 @@ width: 100%;
 </style>
 </head>
 <body>
-<form name="frmUser" method="post" action="">
+<form name="frmUser" method="post" action="../LoginServlet">
 	
 		<table border="0" cellpadding="10" cellspacing="1" width="500" align="center" class="tblLogin">
 			<tr class="tableheader">
@@ -85,7 +85,7 @@ width: 100%;
 			</tr>
 			<tr class="tablerow">
 			<td>
-				<input type="text" name="Email" placeholder="Email" class="login-input" required></td>
+				<input type="text" name="email" placeholder="Email" class="login-input" required></td>
 			</tr>
 			<tr class="tablerow">
 			<td>

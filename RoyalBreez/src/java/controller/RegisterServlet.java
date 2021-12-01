@@ -7,10 +7,13 @@ package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.System.out;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.connection;
+import model.passwordEncryption;
 
 /**
  *
@@ -71,6 +74,33 @@ public class RegisterServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        
+        String first_name = request.getParameter("fname");
+        String last_name = request.getParameter("lname");
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
+        String mobile = request.getParameter("mobile");
+        String country = request.getParameter("country");
+        
+        passwordEncryption pass = new passwordEncryption();
+        String encryptedPassword = pass.encrypt(password);
+        
+        try 
+        {
+            connection conn = new connection();
+            boolean result = conn.sqlCommand("insert into customers (first_name,last_name,email,password,country,phone_number) VALUES('"+first_name+"','"+last_name+"','"+email+"','"+encryptedPassword+"','"+country+"','"+mobile+"')");
+            if(result==true)
+                //writer
+                out.println("your message send successfully");
+            else
+                //writer
+                out.println("sending failed");
+
+        }
+        catch(Exception se)
+        {
+            se.printStackTrace();
+        }
     }
 
     /**

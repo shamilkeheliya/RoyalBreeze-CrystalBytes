@@ -147,7 +147,7 @@ fieldset {
 </head>
 <body>
     <div class="container">  
-        <form id="contact" action="" method="post" enctype="multipart/form-data">
+        <form id="contact" action="../RegisterServlet" method="post">
           <h3 style="margin-bottom: 10px;">Sign Up</h3>
           <fieldset>
             <input name="fname" placeholder="First Name" type="text" tabindex="1" required autofocus>
