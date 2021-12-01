@@ -29,7 +29,7 @@ public class connection {
         {
             try
             {
-                conn = DriverManager.getConnection("jdbc:mysql://localhost/test","root","");
+                conn = DriverManager.getConnection("jdbc:mysql://localhost/royalbreez","root","");
                 out.println("Connention Success!!!!!!!!!!");
             }
             catch (Exception ex)
@@ -76,6 +76,25 @@ public class connection {
                         return false;
                     
                 }
+    
+    public boolean sqlCommand(String query) throws ClassNotFoundException, SQLException
+    {
+        try
+        {
+            PreparedStatement ps = createConnection().prepareStatement(query);
+            int i = ps.executeUpdate();
+            
+            if(i > 0) 
+                return true;
+            else
+                return false;
+        }
+        catch(Exception ex)
+        {
+            out.println("Error: "+ex);
+            return false;        
+        }  
+    }
 
     
 }

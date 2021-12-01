@@ -17,6 +17,8 @@
         <% 
             connection conn = new connection();
             conn.createConnection();
+            
+            conn.sqlCommand("insert into contact_us(id) values(1)");
         %>
     </body>
 </html>
