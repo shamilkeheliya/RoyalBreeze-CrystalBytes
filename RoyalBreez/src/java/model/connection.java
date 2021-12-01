@@ -59,7 +59,7 @@ public class connection {
                      return st;   
     
                }*/
-    public  boolean regUser(String name, String email,String pass) throws ClassNotFoundException, SQLException 
+    public  boolean regUser(String firstname, String lastname,String email, String password,String phone,String country) throws ClassNotFoundException, SQLException 
                 {
                     PreparedStatement ps = createConnection().prepareStatement("query");
                     ps.setString(1, firstname);
