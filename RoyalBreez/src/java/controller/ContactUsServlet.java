@@ -7,6 +7,7 @@ package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import static java.lang.System.out;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -85,22 +86,24 @@ public class ContactUsServlet extends HttpServlet {
      String email = request.getParameter("email");
      String message = request.getParameter("message");
         
-        try {
-               connection con=new connection();
-               boolean rslt=con.#(name, email,message);
-               if(rslt==true)
-                   out.println("your message send successfully");
-                  else
-                   out.println("sending failed");
+        try 
+        {
+            connection conn = new connection();
+            boolean result = conn.sqlCommand("insert into contact_us (name, email,message,seen,date) VALUES('"+name+"','"+email+"','"+message+"',0,'"+java.time.LocalDate.now()+"')");
+            if(result==true)
+                out.println("your message send successfully");
+            else
+                out.println("sending failed");
 
-           }
-        catch(Exception se) {
+        }
+        catch(Exception se)
+        {
             se.printStackTrace();
         }
+    }    
+        
     @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
-}
 }
