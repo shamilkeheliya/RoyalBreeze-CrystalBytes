@@ -91,12 +91,14 @@ public class ContactUsServlet extends HttpServlet {
             connection conn = new connection();
             boolean result = conn.sqlCommand("insert into contact_us (name, email,message,seen,date) VALUES('"+name+"','"+email+"','"+message+"',0,'"+java.time.LocalDate.now()+"')");
             if(result==true)
-                //writer
-                out.println("your message send successfully");
+            {   
+            PrintWriter out = response.getWriter();
+                out.println("your message send successfully");}
             else
-                //writer
+            {
+               PrintWriter out = response.getWriter();
                 out.println("sending failed");
-
+            }
         }
         catch(Exception se)
         {
