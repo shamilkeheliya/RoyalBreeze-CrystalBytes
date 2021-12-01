@@ -282,13 +282,13 @@ input.error{
     <h3>Contact Us</h3>
     <h4>Contact us today!</h4>
     <fieldset>
-      <input placeholder=" Name" type="text" >
+      <input placeholder=" Name" type="text" name="name" >
     </fieldset>
     <fieldset>
-      <input placeholder="Email Address" type="email" >
+      <input placeholder="Email Address" type="email" name="email" >
     </fieldset>
 
-      <textarea placeholder="Type your message here...." ></textarea>
+      <textarea placeholder="Type your message here...."  name="message"></textarea>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send now</button>
