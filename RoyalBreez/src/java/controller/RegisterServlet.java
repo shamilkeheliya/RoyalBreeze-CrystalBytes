@@ -3,6 +3,7 @@ package controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 import static java.lang.System.out;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -43,10 +44,17 @@ public class RegisterServlet extends HttpServlet {
             connection conn = new connection();
             boolean result = conn.sqlCommand("insert into customers (first_name,last_name,email,password,country,phone_number) VALUES('"+first_name+"','"+last_name+"','"+email+"','"+encryptedPassword+"','"+country+"','"+mobile+"')");
             if(result==true)
-                out.println("Your Account Created Successfully");
+            {
+                out.println("<h2 style='color:white'>Your Message Send successfully</h2>");
+                RequestDispatcher rs = request.getRequestDispatcher("Login Register/Login.jsp");
+                rs.include(request, response);
+            }    
             else
-                out.println("Account Created Failed");
-
+            {
+                out.println("<h2 style='color:white'>Account Created Failed</h2>");
+                RequestDispatcher rs = request.getRequestDispatcher("Login Register/Register.jsp");
+                rs.include(request, response);                
+            }
         }
         catch(Exception se)
         {
