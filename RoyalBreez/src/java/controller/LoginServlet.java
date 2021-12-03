@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import static java.lang.System.out;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -39,16 +40,34 @@ public class LoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         
 
-    }
+    //cookies
+    try{
+		
+	String n=request.getParameter("name");
+	out.print("Welcome "+n);
 
-    /**
+	Cookie ck=new Cookie("name",n);//creating cookie object
+       	response.addCookie(ck);//adding cookie in the response
+
+	//creating submit button
+	out.print("<form action='#' method='post'>");
+	out.print("<input type='submit' value='go'>");
+	out.print("</form>");
+		
+	out.close();
+
+        }
+    catch(Exception e)
+    {
+        System.out.println(e);
+    }
+    /**}
      * Returns a short description of the servlet.
      *
      * @return a String containing servlet description
      */
-    @Override
+   /* @Override
     public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-
-}
+        return "Short description";*/
+    }// </editor-fold
+        }
