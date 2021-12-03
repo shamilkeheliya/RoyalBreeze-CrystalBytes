@@ -1,7 +1,7 @@
 <%-- 
     Document   : Reservation
     Created on : 26-Nov-2021, 15:36:12
-    Author     : IsuraD
+    Author     : Thanushi
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
