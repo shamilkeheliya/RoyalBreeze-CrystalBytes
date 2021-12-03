@@ -50,7 +50,7 @@ width: 100%;
     color: white;
     font-size: 18px;
     font-weight: 500;
-    border-radius: 5px;
+   ;
 }
 #bDiv{
     border:0px;
@@ -93,7 +93,7 @@ width: 100%;
 			</tr>
 			<tr class="tableheader">
 				<td align="center" colspan="2"><input type="submit" name="submit" value="Submit" class="btnSubmit"></td>
-			</tr
+                        </tr>
                         <tr><td><p><a href="Register.jsp">Don't have an account?</a></p></td></tr>
 		</table>
 </form>
