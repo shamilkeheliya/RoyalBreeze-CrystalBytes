@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
             connection conn = new connection();
             boolean result = conn.sqlCommand("select*from customers(email,password)VALUES('"+email+"','"+password+"')");
       
-        if(email.equals("#")){  
+        if(email.equals("Profile.jsp")){  
             out.print("You are successfully logged in!");  
             out.print("<br>Welcome, "+email);  
               
