@@ -59,7 +59,7 @@ public class LoginServlet extends HttpServlet {
             response.addCookie(ck);  
         }
         else{  
-            out.println("<h2 style='color:white'>Email or Password Incorrect</h2>");
+            out.println("<h2 style='color:white; text-align: center;'>Email or Password Incorrect</h2>");
             RequestDispatcher rs = request.getRequestDispatcher("Login Register/Login.jsp");
             rs.include(request, response);
         }  
@@ -69,13 +69,6 @@ public class LoginServlet extends HttpServlet {
             se.printStackTrace();
         }
     }
-    
-  
-    /**}
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
     
     @Override
     public String getServletInfo() {

@@ -44,13 +44,13 @@ public class ContactUsServlet extends HttpServlet {
             boolean result = conn.sqlCommand("insert into contact_us (name, email,message,seen,date) VALUES('"+name+"','"+email+"','"+message+"',0,'"+java.time.LocalDate.now()+"')");
             if(result==true)
             {   
-                out.println("<h2 style='color:white'>Your Message Send successfully</h2>");
+                out.println("<h2 style='color:white; text-align: center;'>Your Message Send successfully</h2>");
                 RequestDispatcher rs = request.getRequestDispatcher("Contact us/Contact_Us.jsp");
                 rs.include(request, response);
             }
             else
             {
-                out.println("<h2 style='color:white'>Message Sent Faild</h2>");
+                out.println("<h2 style='color:white; text-align: center;'>Message Sent Faild</h2>");
                 RequestDispatcher rs = request.getRequestDispatcher("Contact us/Contact_Us.jsp");
                 rs.include(request, response);
             }

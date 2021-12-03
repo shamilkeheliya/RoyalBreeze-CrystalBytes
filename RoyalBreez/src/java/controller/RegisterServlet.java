@@ -46,7 +46,7 @@ public class RegisterServlet extends HttpServlet {
             boolean result = conn.sqlCommand("insert into customers (first_name,last_name,email,password,country,phone_number) VALUES('"+first_name+"','"+last_name+"','"+email+"','"+encryptedPassword+"','"+country+"','"+mobile+"')");
             if(result==true)
             {
-                out.println("<h2 style='color:white'>Your Message Send successfully</h2>");
+                out.println("<h2 style='color:white; text-align: center;'>Your Message Send successfully</h2>");
                 RequestDispatcher rs = request.getRequestDispatcher("Profile/Profile.jsp");
                 rs.include(request, response);
                 
@@ -56,7 +56,7 @@ public class RegisterServlet extends HttpServlet {
             }    
             else
             {
-                out.println("<h2 style='color:white'>Account Created Failed</h2>");
+                out.println("<h2 style='color:white; text-align: center;'>Account Created Failed</h2>");
                 RequestDispatcher rs = request.getRequestDispatcher("Login Register/Register.jsp");
                 rs.include(request, response);                
             }
