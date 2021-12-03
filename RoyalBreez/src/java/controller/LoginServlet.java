@@ -8,12 +8,14 @@ package controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 import static java.lang.System.out;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.connection;
+import model.passwordEncryption;
 
 /**
  *
@@ -39,24 +41,29 @@ public class LoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         
+        passwordEncryption pass = new passwordEncryption();
+        String encryptedPassword = pass.encrypt(password);
+        
 
     //cookies
      try 
         {
             connection conn = new connection();
-            boolean result = conn.sqlCommand("select*from customers(email,password)VALUES('"+email+"','"+password+"')");
+            boolean result = conn.checkUser(email, encryptedPassword);
       
-        if(email.equals("Profile.jsp")){  
-            out.print("You are successfully logged in!");  
-            out.print("<br>Welcome, "+email);  
+        if(result==true){
+            out.println("<h2 style='color:white'>Your Logged In successfully</h2>");
+            RequestDispatcher rs = request.getRequestDispatcher("Profile/Profile.jsp");
+            rs.include(request, response);
               
             Cookie ck=new Cookie("email",email);  
             ck.setMaxAge(30);// cookie will expire in 30 seconds
             response.addCookie(ck);  
         }
         else{  
-            out.print("sorry, email or password error!");  
-            request.getRequestDispatcher("Login.jsp").include(request, response);  
+            out.println("<h2 style='color:white'>Email or Password Incorrect</h2>");
+            RequestDispatcher rs = request.getRequestDispatcher("Login Register/Login.jsp");
+            rs.include(request, response);
         }  
        }
         catch(Exception se)
@@ -77,4 +84,4 @@ public class LoginServlet extends HttpServlet {
         return "Short description";
    
     }// </editor-fold
-        }
+}

@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 import static java.lang.System.out;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -46,8 +47,12 @@ public class RegisterServlet extends HttpServlet {
             if(result==true)
             {
                 out.println("<h2 style='color:white'>Your Message Send successfully</h2>");
-                RequestDispatcher rs = request.getRequestDispatcher("Login Register/Login.jsp");
+                RequestDispatcher rs = request.getRequestDispatcher("Profile/Profile.jsp");
                 rs.include(request, response);
+                
+                Cookie ck=new Cookie("email",email);  
+                ck.setMaxAge(30);// cookie will expire in 30 seconds
+                response.addCookie(ck);
             }    
             else
             {

@@ -39,18 +39,17 @@ public class connection {
         }        
         return conn;
     }
-    /*public  boolean checkUser(String email,String pass) 
+    public  boolean checkUser(String email,String pass) 
                 {
                   boolean st =false;
                   try {
 
                       
-                      PreparedStatement ps = createConnection().prepareStatement("select * from login where email=? and pass=?");
+                      PreparedStatement ps = createConnection().prepareStatement("select * from customers where email=? and password=?");
                       ps.setString(1, email);
                       ps.setString(2, pass);
                       ResultSet rs =ps.executeQuery();
                       st = rs.next();
-
                   }
                     catch(Exception e) {
                         e.printStackTrace();
@@ -58,7 +57,8 @@ public class connection {
         
                      return st;   
     
-               }*/
+               }
+    
     public  boolean regUser(String firstname, String lastname,String email, String password,String phone,String country) throws ClassNotFoundException, SQLException 
                 {
                     PreparedStatement ps = createConnection().prepareStatement("query");
