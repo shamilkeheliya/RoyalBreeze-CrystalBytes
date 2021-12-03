@@ -36,40 +36,45 @@ public class LoginServlet extends HttpServlet {
        response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         
-        String name = request.getParameter("name");
         String email = request.getParameter("email");
+        String password = request.getParameter("password");
         
 
     //cookies
-    try{
-		
-	String n=request.getParameter("name");
-	out.print("Welcome "+n);
-
-	Cookie ck=new Cookie("name",n);//creating cookie object
-       	response.addCookie(ck);//adding cookie in the response
-
-	//creating submit button
-	out.print("<form action='#' method='post'>");
-	out.print("<input type='submit' value='go'>");
-	out.print("</form>");
-		
-	out.close();
-
+     try 
+        {
+            connection conn = new connection();
+            boolean result = conn.sqlCommand("select*from customers(email,password)VALUES('"+email+"','"+password+"')");
+      
+        if(email.equals("#")){  
+            out.print("You are successfully logged in!");  
+            out.print("<br>Welcome, "+email);  
+              
+            Cookie ck=new Cookie("email",email);  
+            ck.setMaxAge(30);// cookie will expire in 30 seconds
+            response.addCookie(ck);  
         }
-    catch(Exception e)
-    {
-        System.out.println(e);
+        else{  
+            out.print("sorry, email or password error!");  
+            request.getRequestDispatcher("login.jsp").include(request, response);  
+        }  
+       }
+        catch(Exception se)
+        {
+            se.printStackTrace();
+        }
     }
+    
+  
     /**}
      * Returns a short description of the servlet.
      *
      * @return a String containing servlet description
      */
     
-   /* @Override
+    @Override
     public String getServletInfo() {
-        return "Short description";*/
+        return "Short description";
    
     }// </editor-fold
         }
