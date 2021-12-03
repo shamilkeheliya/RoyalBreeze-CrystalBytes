@@ -46,9 +46,7 @@ public class RegisterServlet extends HttpServlet {
             boolean result = conn.sqlCommand("insert into customers (first_name,last_name,email,password,country,phone_number) VALUES('"+first_name+"','"+last_name+"','"+email+"','"+encryptedPassword+"','"+country+"','"+mobile+"')");
             if(result==true)
             {
-                out.println("<h2 style='color:white; text-align: center;'>Your Message Send successfully</h2>");
-                RequestDispatcher rs = request.getRequestDispatcher("Profile/Profile.jsp");
-                rs.include(request, response);
+                request.getRequestDispatcher("Profile/Profile.jsp");
                 
                 Cookie ck=new Cookie("email",email);  
                 ck.setMaxAge(30);// cookie will expire in 30 seconds

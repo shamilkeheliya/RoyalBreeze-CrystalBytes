@@ -52,7 +52,7 @@ public class LoginServlet extends HttpServlet {
             boolean result = conn.checkUser(email, encryptedPassword);
       
         if(result==true){
-            RequestDispatcher rs = request.getRequestDispatcher("Profile/Profile.jsp");
+            request.getRequestDispatcher("Profile/Profile.jsp");
               
             Cookie ck=new Cookie("email",email);  
             ck.setMaxAge(30);// cookie will expire in 30 seconds
