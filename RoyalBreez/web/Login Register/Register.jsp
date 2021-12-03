@@ -50,9 +50,10 @@ body {    background-image:url("https://i.insider.com/5c3f8f8dbde70f06700cdbf9?w
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
-	background:#F9F9F9;
+	background:rgba(255,255,255,0.6);
 	padding:25px;
 	margin:50px 0;
+        border-radius: 10px;
 }
 
 #contact h3 {
