@@ -52,7 +52,7 @@ public class LoginServlet extends HttpServlet {
             boolean result = conn.checkUser(email, encryptedPassword);
       
         if(result==true){
-            out.println("<h2 style='color:white'>Your Logged In successfully</h2>");
+            out.println("<h2 style='color:white'></h2>");
             RequestDispatcher rs = request.getRequestDispatcher("Profile/Profile.jsp");
             rs.include(request, response);
               
