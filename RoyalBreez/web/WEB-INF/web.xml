@@ -12,6 +12,10 @@
         <servlet-name>ContactUsServlet</servlet-name>
         <servlet-class>controller.ContactUsServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LogOutServlet</servlet-name>
+        <servlet-class>controller.LogOutServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>ContactUsServlet</servlet-name>
         <url-pattern>/ContactUsServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogOutServlet</servlet-name>
+        <url-pattern>/LogOutServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
