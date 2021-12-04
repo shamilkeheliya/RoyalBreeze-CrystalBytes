@@ -11,7 +11,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
-        <h1>Hello World!</h1>
+    <body style="margin: 35px;">
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link" href="DashboardContactusjsp">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="DashboardCustomers.jsp">Customers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="DashboardRoomReservation.jsp">Rooms Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Halls Reservation</a>
+            </li>
+        </ul>
     </body>
 </html>
