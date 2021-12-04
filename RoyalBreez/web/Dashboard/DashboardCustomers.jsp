@@ -32,7 +32,7 @@ ResultSet resultSet = null;
 <body>
 
 <h1>CUSTOMERS</h1>
-<table class="table table-dark table-striped">
+<table class="table table-striped">
     
      <thead>
      <tbody>
