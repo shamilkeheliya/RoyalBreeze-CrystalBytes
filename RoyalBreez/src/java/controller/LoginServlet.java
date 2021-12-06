@@ -14,6 +14,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import model.connection;
 import model.passwordEncryption;
 
@@ -52,11 +53,16 @@ public class LoginServlet extends HttpServlet {
             boolean result = conn.checkUser(email, encryptedPassword);
       
         if(result==true){
-            request.getRequestDispatcher("Profile/Profile.jsp");
-              
+            //request.getRequestDispatcher("Profile/Profile.jsp");
+            /*  
             Cookie ck=new Cookie("email",email);  
             ck.setMaxAge(30);// cookie will expire in 30 seconds
-            response.addCookie(ck);  
+            response.addCookie(ck);  */
+            
+             //creating a session
+            HttpSession session = request.getSession();
+            session.setAttribute("email", email);
+            response.sendRedirect("ProfileServlet");
         }
         else{  
             out.println("<h2 style='color:white; text-align: center;'>Email or Password Incorrect</h2>");

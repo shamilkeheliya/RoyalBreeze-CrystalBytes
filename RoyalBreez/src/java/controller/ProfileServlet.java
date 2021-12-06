@@ -12,6 +12,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -61,11 +62,16 @@ public class ProfileServlet extends HttpServlet {
         response.setContentType("text/html");  
         PrintWriter out=response.getWriter();  
           
-        request.getRequestDispatcher("profile.jsp").include(request, response);  
+        //request.getRequestDispatcher("profile.jsp").include(request, response);  
           
+        HttpSession session = request.getSession();
+        session.setMaxInactiveInterval(30); //Expires after 30 seconds inactivity
+        String email = (String)session.getAttribute("email");
+        //out.println("Hello "+email);
+        
         Cookie ck[]=request.getCookies();  
-        if(ck!=null){  
-         String email=ck[0].getValue();  
+        if(session!=null){  
+        // String email=session[0].getValue();  
         if(!email.equals("")||email!=null){  
             out.print("<b>Welcome to Profile</b>");  
             out.print("<br>Welcome, "+email);  
