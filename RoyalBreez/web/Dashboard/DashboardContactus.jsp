@@ -73,7 +73,7 @@ resultSet = statement.executeQuery(sql);
 while(resultSet.next()){
 %>
 <tr>
-    <td><%=resultSet.getString("customer_id") %></td>
+    <td><%=resultSet.getString("id") %></td>
 <td><%=resultSet.getString("name") %></td>
 <td><%=resultSet.getString("email") %></td>
 <td><%=resultSet.getString("message") %></td>
