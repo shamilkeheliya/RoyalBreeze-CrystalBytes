@@ -173,7 +173,7 @@ body {
 	width: 100%;
 }
 
-.booking input:focus, {
+.booking input:focus {
 	border-bottom: 2px solid #ff9999;
 }
 
