@@ -64,12 +64,6 @@ body {
 	width: 100%;
 }
 
-.slider li:first-of-type {
-	background: url(http://www.moscow-hotels.net/images/hotels/maxima-panorama-hotel/accommodation/rooms/single-room.jpg) center;
-	background-size: cover;
-	height: 650px;
-	width: 100%;
-}
 
 .content {
 	color: #444f5a;
@@ -272,7 +266,7 @@ app.init();
     <div class="card">
       <div class="slider">
         <ul>
-          <li></li>
+          <li style="background: url(http://www.moscow-hotels.net/images/hotels/maxima-panorama-hotel/accommodation/rooms/single-room.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
         </ul>
       </div>
 
@@ -309,7 +303,7 @@ In addition to the comfortable hotel lounge, the room is equipped with a Smart T
     <div class="card">
       <div class="slider">
         <ul>
-          <li></li>
+          <li style="background: url(http://www.moscow-hotels.net/images/hotels/maxima-panorama-hotel/accommodation/rooms/single-room.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
         </ul>
       </div>
 
@@ -346,7 +340,7 @@ The comfort twin room has a size of 17.5 m². In addition to the two comfy beds,
     <div class="card">
       <div class="slider">
         <ul>
-          <li></li>
+          <li style="background: url(http://www.moscow-hotels.net/images/hotels/maxima-panorama-hotel/accommodation/rooms/single-room.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
         </ul>
       </div>
 

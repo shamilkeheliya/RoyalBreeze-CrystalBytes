@@ -64,12 +64,6 @@ body {
 	width: 100%;
 }
 
-.slider li:first-of-type {
-	background: url(https://www.thegoldencrownhotel.com/images/site-specific/golden_crown/weddings/windsor-ballroom-1.jpg) center;
-	background-size: cover;
-	height: 650px;
-	width: 100%;
-}
 
 .content {
 	color: #444f5a;
@@ -272,7 +266,8 @@ app.init();
     <div class="card">
       <div class="slider">
         <ul>
-          <li></li>
+            <li style="background: url(https://www.thegoldencrownhotel.com/images/site-specific/golden_crown/weddings/windsor-ballroom-1.jpg) center; background-size: cover; height: 650px; width: 100%;">    
+            </li>
         </ul>
       </div>
 
@@ -312,7 +307,7 @@ app.init();
     <div class="card">
       <div class="slider">
         <ul>
-          <li></li>
+          <li style="background: url(https://www.thegoldencrownhotel.com/images/site-specific/golden_crown/weddings/windsor-ballroom-1.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
         </ul>
       </div>
 
@@ -349,7 +344,7 @@ app.init();
     <div class="card">
       <div class="slider">
         <ul>
-          <li></li>
+          <li style="background: url(https://www.thegoldencrownhotel.com/images/site-specific/golden_crown/weddings/windsor-ballroom-1.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
         </ul>
       </div>
 
