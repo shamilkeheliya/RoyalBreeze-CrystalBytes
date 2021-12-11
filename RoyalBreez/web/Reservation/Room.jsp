@@ -266,7 +266,7 @@ app.init();
     <div class="card">
       <div class="slider">
         <ul>
-          <li style="background: url(http://www.moscow-hotels.net/images/hotels/maxima-panorama-hotel/accommodation/rooms/single-room.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
+          <li style="background: url(https://b2cfurniture.com.au/pub/media/catalog/product/cache/3fb871f48f7af5e44260f2d9fd3932a9/r/i/rio-toddler-single-bedroom-suite-with-storage.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
         </ul>
       </div>
 
@@ -303,7 +303,7 @@ In addition to the comfortable hotel lounge, the room is equipped with a Smart T
     <div class="card">
       <div class="slider">
         <ul>
-          <li style="background: url(http://www.moscow-hotels.net/images/hotels/maxima-panorama-hotel/accommodation/rooms/single-room.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
+          <li style="background: url(https://i.pinimg.com/originals/0c/f2/9f/0cf29f9bb69f91566fef9f6fa13db2cb.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
         </ul>
       </div>
 
@@ -346,7 +346,7 @@ The comfort twin room has a size of 17.5 m². In addition to the two comfy beds,
 
       <div class="content">
         <div class="description">
-          <h1> Double Room</h1>
+          <h1>Double Room</h1>
           <p>
            Warmth, luxury and peace meet you in our charming comfort double room. In addition to the plush beds, the room is equipped with all amenities the Royal Breez Hotel has to offer.
 From docking station to Nespresso machine with free coffee and tea and from rain shower to room service. In short, everything for a lovely stay on the edge of the Royal Breez.

@@ -307,7 +307,7 @@ app.init();
     <div class="card">
       <div class="slider">
         <ul>
-          <li style="background: url(https://www.thegoldencrownhotel.com/images/site-specific/golden_crown/weddings/windsor-ballroom-1.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
+          <li style="background: url(https://cinnamonweb.blob.core.windows.net/cinnamonweb-prd/event_packages/grand-oak-room-package-623X400_01.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
         </ul>
       </div>
 
@@ -344,13 +344,13 @@ app.init();
     <div class="card">
       <div class="slider">
         <ul>
-          <li style="background: url(https://www.thegoldencrownhotel.com/images/site-specific/golden_crown/weddings/windsor-ballroom-1.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
+          <li style="background: url(https://media.timeout.com/images/103937889/630/472/image.jpg) center; background-size: cover; height: 650px; width: 100%;"></li>
         </ul>
       </div>
 
       <div class="content">
         <div class="description">
-          <h1> Banquet Hall</h1>
+          <h1>Banquet Hall</h1>
           <p>
            The Royal Breez Hotel has another special reception hall called Banquet Hall. This reception is divided into 3 main areas. An internal A/C Hall, an open seating garden area, and roofed Non A/C seating. It can manage around 200 pax.
           </p>
