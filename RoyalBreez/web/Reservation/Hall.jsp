@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-    padding-top: 100px;
+    /*padding-top: 100px;*/
 	align-items: center;
 	display: flex;
 	height: 750px;
@@ -109,11 +109,12 @@ body {
 	display: block;
 	font-weight: 500;
 	letter-spacing: 4px;
-	padding: 20px 0;
+	padding: 10px 0;
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
-}
+        border-radius: 5px;
+        }      
 
 .button:hover {
 	background: #EAC50C;
@@ -376,7 +377,9 @@ app.init();
       </div>
 
     </div>
-  
+
+  <div style="height: 50px;" ></div>
+
  <%@include file="../Footer/footer.jsp" %>
 
     </body>

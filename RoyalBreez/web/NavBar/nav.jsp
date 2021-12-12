@@ -30,7 +30,7 @@
             <a href="../home/home.jsp" class="logo"><img src="../images/logo.png" style="width: 60px;" alt=""></a>
     <ul>
         <li><a href="../home/home.jsp"><b>Home</b></a></li>
-        <li><a href="../Gallery/Gallery.jsp"><b>Gallery</b></a></li>
+        <li><a href="../gallery/gallery.jsp"><b>Gallery</b></a></li>
         <li><a href="../Reservation/Room.jsp"><b>Rooms</b></a></li>
         <li><a href="../Reservation/Hall.jsp"><b>Halls</b></a></li>
         <li><a href="../Contact us/Contact_Us.jsp" target="_blank"><b>Contact Us</b></a></li>

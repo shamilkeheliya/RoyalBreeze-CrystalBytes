@@ -27,7 +27,7 @@
     </head>
     <body>
         
-        <div class="footer-maindiv"  style="padding-top: 20px;">
+        <div class="footer-maindiv">
 
         <div class="footer">
 

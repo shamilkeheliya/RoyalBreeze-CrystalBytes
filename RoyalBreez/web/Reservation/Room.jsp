@@ -38,7 +38,7 @@ body {
 }
 
 .container {
-	 padding-top: 100px;
+	 
 	align-items: center;
 	display: flex;
 	height: 750px;
@@ -73,6 +73,7 @@ body {
 	padding: 35px;
 	transition: width .4s ease-out;
 	width: 35%;
+        height:800px;
 }
 
 .content h1 {
@@ -109,10 +110,11 @@ body {
 	display: block;
 	font-weight: 500;
 	letter-spacing: 4px;
-	padding: 20px 0;
+	padding: 10px 0;
 	text-align: center;
 	text-transform: uppercase;
 	width: 100%;
+        border-radius: 5px;
 }
 
 .button:hover {
@@ -264,8 +266,8 @@ app.init();
 <!-- Single Room-->
 
 <%@include file="../NavBar/nav.jsp" %>
-<div style="height: 100px;" ></div>
 
+<div style="height: 100px;" ></div>
 <div class="container">
     <div class="card">
       <div class="slider">
@@ -373,7 +375,7 @@ From docking station to Nespresso machine with free coffee and tea and from rain
       </div>
 
     </div>
-  
+  <div style="height: 50px;" ></div>
 <%@include file="../Footer/footer.jsp" %>
     </body>
 </html>
