@@ -11,6 +11,8 @@
         <title>Rooms</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+         <link rel="icon" type="image/png" sizes="16x16" href="../images/icon.png">
   
     <style>
 * {
@@ -36,9 +38,10 @@ body {
 }
 
 .container {
+	 padding-top: 100px;
 	align-items: center;
 	display: flex;
-	height: 100%;
+	height: 750px;
 	justify-content: center;
 	margin: 0 auto;
 	max-width: 1000px;
@@ -260,7 +263,8 @@ app.init();
     <body>
 <!-- Single Room-->
 
-
+<%@include file="../NavBar/nav.jsp" %>
+<div style="height: 100px;" ></div>
 
 <div class="container">
     <div class="card">
@@ -370,7 +374,7 @@ From docking station to Nespresso machine with free coffee and tea and from rain
 
     </div>
   
-
+<%@include file="../Footer/footer.jsp" %>
     </body>
 </html>
 
