@@ -27,14 +27,14 @@
     <body>
         
         <header>
-            <a href="#" class="logo"><img src="../images/logo.png" style="width: 60px;" alt=""></a>
+            <a href="../home/home.jsp" class="logo"><img src="../images/logo.png" style="width: 60px;" alt=""></a>
     <ul>
-        <li><a href="#"><b>Home</b></a></li>
-        <li><a href="#"><b>Gallery</b></a></li>
-        <li><a href="#"><b>Rooms</b></a></li>
-        <li><a href="#"><b>Halls</b></a></li>
-        <li><a href="#" target="_blank"><b>Contact Us</b></a></li>
-        <li><a href="#" target="_blank"><b>Profile</b></a></li>
+        <li><a href="../home/home.jsp"><b>Home</b></a></li>
+        <li><a href="../Gallery/Gallery.jsp"><b>Gallery</b></a></li>
+        <li><a href="../Reservation/Room.jsp"><b>Rooms</b></a></li>
+        <li><a href="../Reservation/Hall.jsp"><b>Halls</b></a></li>
+        <li><a href="../Contact us/Contact_Us.jsp" target="_blank"><b>Contact Us</b></a></li>
+        <li><a href="../Profile/Profile.jsp" target="_blank"><b>Profile</b></a></li>
     </ul>
 </header>
      <script type="text/javascript">
