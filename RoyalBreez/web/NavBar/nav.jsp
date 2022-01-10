@@ -34,7 +34,7 @@
         <li><a href="../Reservation/Room.jsp"><b>Rooms</b></a></li>
         <li><a href="../Reservation/Hall.jsp"><b>Halls</b></a></li>
         <li><a href="../Contact us/Contact_Us.jsp" target="_blank"><b>Contact Us</b></a></li>
-        <li><a href="../Profile/Profile.jsp" target="_blank"><b>Profile</b></a></li>
+        <li><a href="../Reserve_Now/Reserve.jsp" target="_blank"><b>Reserve Now</b></a></li>
     </ul>
 </header>
      <script type="text/javascript">

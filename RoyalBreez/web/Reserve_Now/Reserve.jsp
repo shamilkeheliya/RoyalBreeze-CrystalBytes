@@ -10,7 +10,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Booking</title>
+<title>Reserve Now</title>
+<link rel="icon" type="image/png" sizes="16x16" href="../images/icon.png">
 
 <!-- Font -->
 <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Ubuntu:wght@400;500;700&display=swap">
