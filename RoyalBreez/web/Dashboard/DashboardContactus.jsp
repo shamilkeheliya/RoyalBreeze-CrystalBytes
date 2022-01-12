@@ -58,7 +58,7 @@ ResultSet resultSet = null;
       <th scope="col">Name</th>
       <th scope="col">Email</th>
       <th scope="col">Message</th>
-      <th scope="col">Seen</th>
+      <!--<th scope="col">Seen</th>-->
       <th scope="col">Date</th>
       
       
@@ -77,7 +77,7 @@ while(resultSet.next()){
 <td><%=resultSet.getString("name") %></td>
 <td><%=resultSet.getString("email") %></td>
 <td><%=resultSet.getString("message") %></td>
-<td><%=resultSet.getString("seen") %></td>
+<!--<td><%=resultSet.getString("seen") %></td>-->
 <td><%=resultSet.getString("date") %></td>
 
 </tr>
