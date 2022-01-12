@@ -136,89 +136,93 @@ input[id=dropdown]:hover{
 
 <div class="container">
 <div class="container-2">
-<form action="#">
+<form  id="contact" action="../RoomReservation" method="post">
 
 <h2 class="heading heading-yellow">Room Reservation</h2>
 
 <div class="form-field">
 <p>Your Name</p>
-<input type="text" placeholder="Your Name">
+<input name="name" type="text" placeholder="Your Name">
 </div>
 <div class="form-field">
 <p>Your email</p>
-<input type="email" placeholder="Your email">
+<input name="email" type="email" placeholder="Your email">
 </div>
 <div class="form-field">
 <p>Check In Date</p>
-<input type="date">
+<input name="indate" type="date">
 </div>
 <div class="form-field">
 <p>Check Out Date</p>
-<input type="date">
+<input name="outdate" type="date">
 </div>
 <div class="form-field">
 <p>How many people?</p>
-<select name="select" id="dropdown">
-<option value="1">1 person</option>
-<option value="2">2 persons</option>
-<option value="3">3 persons</option>
-<option value="4">4 persons</option>
-<option value="5">5 persons</option>
-<option value="5+">5+ persons</option>
+<select name="people" id="dropdown">
+<option value="1 Person">1 Person</option>
+<option value="2 Persons">2 Persons</option>
+<option value="3 Persons">3 Persons</option>
+<option value="4 Persons">4 Persons</option>
+<option value="5 Persons">5 Persons</option>
+<option value="5+ Persons">5+ Persons</option>
 </select>
 </div>
 
 <div class="form-field">
 <p>Room Type</p>
-<select name="select" id="dropdown">
-<option value="1">Single Room</option>
-<option value="2">Twin Room</option>
-<option value="3">Double Room</option>
+<select name="type" id="dropdown">
+<option value="Single Room">Single Room</option>
+<option value="Twin Room">Twin Room</option>
+<option value="Double Room">Double Room</option>
 </select>
 </div>
 
 
-<button class="btn">BOOK NOW</button>
+<button class="btn"  name="submit" type="submit" id="contact-submit" data-submit="...Sending">BOOK NOW</button>
 </form>
 </div>
 <div class="container-form">
-<form action="#">
+<form id="contact" action="../HallReservation" method="post">
 
 <h2 class="heading heading-yellow">Hall Reservation</h2>
 
 <div class="form-field">
 <p>Your Name</p>
-<input type="text" placeholder="Your Name">
+<input name="name" type="text" placeholder="Your Name">
 </div>
 <div class="form-field">
 <p>Your email</p>
-<input type="email" placeholder="Your email">
+<input name="email" type="email" placeholder="Your email">
 </div>
 <div class="form-field">
-<p>Check In Date</p>
-<input type="date">
+<p>Date</p>
+<input name="date" type="date">
 </div>
 
 <div class="form-field">
 <p>Hall Type</p>
-<select name="select" id="dropdown">
-<option value="1">Luxury Hall</option>
-<option value="2">Grand Hall</option>
-<option value="3">Banquet Hall</option>
+<select name="type" id="dropdown">
+<option value="Luxury Hall">Luxury Hall</option>
+<option value="Grand Hall">Grand Hall</option>
+<option value="Banquet Hall">Banquet Hall</option>
 </select>
 </div>
 <div class="form-field">
 <p>How many people?</p>
-<select name="select" id="dropdown">
-<option value="1">100+</option>
-<option value="2">200+</option>
-<option value="3">500+</option>
+<select name="people" id="dropdown">
+<option value="100 - 150">100 - 150</option>
+<option value="150 - 200">150 - 200</option>
+<option value="200 - 250">200 - 250</option>
+<option value="250 - 300">250 - 300</option>
+<option value="300 - 450">300 - 450</option>
+<option value="450 - 500">450 - 500</option>
+<option value="500+">500+</option>
 </select>
 </div>
 <br>
 <br>
 <br>
-<button class="btn">BOOK NOW</button>
+<button class="btn"  name="submit" type="submit" id="contact-submit" data-submit="...Sending">BOOK NOW</button>
 </form>
 </div>
 </div>

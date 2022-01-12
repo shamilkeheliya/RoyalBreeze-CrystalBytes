@@ -37,9 +37,9 @@ ResultSet resultSet = null;
             <li class="nav-item">
               <a class="nav-link active" href="#">Contact Us</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link" href="DashboardCustomers.jsp">Customers</a>
-            </li>
+            </li>-->
             <li class="nav-item">
               <a class="nav-link" href="DashboardRoomReservation.jsp">Rooms Reservation</a>
             </li>
@@ -68,7 +68,7 @@ ResultSet resultSet = null;
 try{
 connection = DriverManager.getConnection(connectionUrl+database, userid, password);
 statement=connection.createStatement();
-String sql ="select * from contact_us";
+String sql ="select * from contact_us ORDER by id DESC";
 resultSet = statement.executeQuery(sql);
 while(resultSet.next()){
 %>
