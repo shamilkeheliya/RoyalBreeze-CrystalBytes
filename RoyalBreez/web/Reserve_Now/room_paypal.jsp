@@ -9,10 +9,34 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Ubuntu&display=swap" rel="stylesheet"> 
+        
+        <title>Pay Here</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/icon.png">
+        <style>
+            .main01{
+/*                border: 1px solid black; */
+                padding-top: 100px;
+                hight: 100%; 
+                width: 90%;
+            }
+            .textmain{
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 100px;
+            }
+        </style>
     </head>
     <body>
-        
+    <center>
+        <div class="main01">
+            <p class="textmain">Pay Here..!</p>
         <div id="smart-button-container">
                         <div style="text-align: center;">
                             <div id="paypal-button-container"></div>
@@ -59,7 +83,8 @@
                             }
                             initPayPalButton();
                     </script>
-                    
+        </div>
+    </center>
     </body>
 </html>
 
