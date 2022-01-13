@@ -24,6 +24,9 @@ Connection connection = null;
 Statement statement = null;
 ResultSet resultSet = null;
 %>
+
+
+    
 <!DOCTYPE html>
 <html>
     <head>
@@ -45,6 +48,9 @@ ResultSet resultSet = null;
             <li class="nav-item">
               <a class="nav-link" href="DashboardHallReservation.jsp">Halls Reservation</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Login Register/Register.jsp">Create User</a>
+            </li>
         </ul>
 
 <table class="table table-striped">
@@ -52,13 +58,9 @@ ResultSet resultSet = null;
      <thead>
      <tbody>
     <tr>
-      <th scope="col">Customer ID</th>
-      <th scope="col">First Name</th>
-      <th scope="col">Last Name</th>
+      <th scope="col">User ID</th>
+      <th scope="col">Name</th>
       <th scope="col">Email</th>
-      <th scope="col">Password</th>
-      <th scope="col">Country</th>
-      <th scope="col">Phone Number</th>
       
     </tr>
 
@@ -66,18 +68,14 @@ ResultSet resultSet = null;
 try{
 connection = DriverManager.getConnection(connectionUrl+database, userid, password);
 statement=connection.createStatement();
-String sql ="select * from customers";
+String sql ="select * from users";
 resultSet = statement.executeQuery(sql);
 while(resultSet.next()){
 %>
 <tr>
-    <td><%=resultSet.getString("customer_id") %></td>
-<td><%=resultSet.getString("first_name") %></td>
-<td><%=resultSet.getString("last_name") %></td>
-<td><%=resultSet.getString("email") %></td>
-<td><%=resultSet.getString("password") %></td>
-<td><%=resultSet.getString("country") %></td>
-<td><%=resultSet.getString("phone_number") %></td>
+    <td><%=resultSet.getString("id") %></td>
+    <td><%=resultSet.getString("name") %></td>
+    <td><%=resultSet.getString("email") %></td>
 </tr>
 <%
 }

@@ -53,16 +53,12 @@ public class LoginServlet extends HttpServlet {
             boolean result = conn.checkUser(email, encryptedPassword);
       
         if(result==true){
-            //request.getRequestDispatcher("Profile/Profile.jsp");
-            /*  
-            Cookie ck=new Cookie("email",email);  
-            ck.setMaxAge(30);// cookie will expire in 30 seconds
-            response.addCookie(ck);  */
-            
              //creating a session
             HttpSession session = request.getSession();
+            session.setMaxInactiveInterval(30);
             session.setAttribute("email", email);
-            response.sendRedirect("ProfileServlet");
+            response.sendRedirect("Dashboard/DashboardContactus.jsp");
+           
         }
         else{  
             out.println("<h2 style='color:white; text-align: center;'>Email or Password Incorrect</h2>");

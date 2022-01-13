@@ -26,6 +26,8 @@ Connection connection = null;
 Statement statement = null;
 ResultSet resultSet = null;
 %>
+
+    
 <html>
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -37,14 +39,17 @@ ResultSet resultSet = null;
             <li class="nav-item">
               <a class="nav-link" href="DashboardContactus.jsp">Contact Us</a>
             </li>
-            <!--<li class="nav-item">
-              <a class="nav-link" href="DashboardCustomers.jsp">Customers</a>
-            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="DashboardCustomers.jsp">Users</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="DashboardRoomReservation.jsp">Rooms Reservation</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#">Halls Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Login Register/Register.jsp">Create User</a>
             </li>
         </ul>
 

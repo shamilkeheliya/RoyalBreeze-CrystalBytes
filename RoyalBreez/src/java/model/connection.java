@@ -45,7 +45,7 @@ public class connection {
         boolean st =false;
         try
         { 
-            PreparedStatement ps = createConnection().prepareStatement("select * from customers where email=? and password=?");
+            PreparedStatement ps = createConnection().prepareStatement("select * from users where email=? and password=?");
             ps.setString(1, email);
             ps.setString(2, pass);
             ResultSet rs =ps.executeQuery();

@@ -149,31 +149,21 @@ fieldset {
 <body>
     <div class="container">  
         <form id="contact" action="../RegisterServlet" method="post">
-          <h3 style="margin-bottom: 10px;">Sign Up</h3>
+          <h3 style="margin-bottom: 10px;">Create User</h3>
           <fieldset>
-            <input name="fname" placeholder="First Name" type="text" tabindex="1" required autofocus>
+            <input name="name" placeholder="Name" type="text" tabindex="1" required autofocus>
           </fieldset>
-          <fieldset>
-            <input name="lname" placeholder="Last Name" type="text" tabindex="2" required autofocus>
-          </fieldset>  
           <fieldset>
             <input name="email" placeholder="Your Email Address" type="email" tabindex="3" required>
           </fieldset>
           <fieldset>
             <input name="password" placeholder="   Password" type="password" tabindex="4" required autofocus class="hold">
           </fieldset>
-          <fieldset>
-            <input name="mobile" placeholder="Your Phone Number" type="tel" tabindex="5" required>
-          </fieldset>
-          <fieldset>
-            <input name="country" placeholder="Your Country" type="text" tabindex="6" required autofocus>
-          </fieldset>
           <br>
 
           <fieldset>
             <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
           </fieldset>
-          <a href="Login.jsp" id="al">Already have an account?</a>
         </form>
     </div>
 </body>

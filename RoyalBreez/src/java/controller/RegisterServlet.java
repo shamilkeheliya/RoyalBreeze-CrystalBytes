@@ -30,12 +30,9 @@ public class RegisterServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         
-        String first_name = request.getParameter("fname");
-        String last_name = request.getParameter("lname");
+        String name = request.getParameter("name");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        String mobile = request.getParameter("mobile");
-        String country = request.getParameter("country");
         
         passwordEncryption pass = new passwordEncryption();
         String encryptedPassword = pass.encrypt(password);
@@ -43,10 +40,12 @@ public class RegisterServlet extends HttpServlet {
         try 
         {
             connection conn = new connection();
-            boolean result = conn.sqlCommand("insert into customers (first_name,last_name,email,password,country,phone_number) VALUES('"+first_name+"','"+last_name+"','"+email+"','"+encryptedPassword+"','"+country+"','"+mobile+"')");
+            boolean result = conn.sqlCommand("insert into users (name,email,password) VALUES('"+name+"','"+email+"','"+encryptedPassword+"')");
             if(result==true)
             {
-                request.getRequestDispatcher("Profile/Profile.jsp");
+                out.println("<h2 style='color:white; text-align: center;'>User Created Successful</h2>");
+                RequestDispatcher rs = request.getRequestDispatcher("Login Register/Register.jsp");
+                rs.include(request, response);
                 
                 Cookie ck=new Cookie("email",email);  
                 ck.setMaxAge(30);// cookie will expire in 30 seconds
@@ -54,7 +53,7 @@ public class RegisterServlet extends HttpServlet {
             }    
             else
             {
-                out.println("<h2 style='color:white; text-align: center;'>Account Created Failed</h2>");
+                out.println("<h2 style='color:white; text-align: center;'>User Created Failed</h2>");
                 RequestDispatcher rs = request.getRequestDispatcher("Login Register/Register.jsp");
                 rs.include(request, response);                
             }
