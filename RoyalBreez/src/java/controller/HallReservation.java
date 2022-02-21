@@ -49,8 +49,14 @@ public class HallReservation extends HttpServlet {
             if(result==true)
             {
                 out.println("<h2 style='color:white; text-align: center;'>Hall Reserved Successful</h2>");
-                RequestDispatcher rs = request.getRequestDispatcher("Reserve_Now/Reserve.jsp");
+                //RequestDispatcher rs = request.getRequestDispatcher("Reserve_Now/Reserve.jsp");
+                RequestDispatcher rs = request.getRequestDispatcher("Reserve_Now/hall_paypal.jsp");
                 rs.include(request, response);
+                
+                response.sendRedirect("Reserve_Now/hall_paypal.jsp");
+                
+                //String redirectURL = "https://royalbreez.secodek.com/index.php?APIkey=hha6asdahhasdhas8sdh3hjh3&name="+name+"&email="+email+"";
+                //response.sendRedirect(redirectURL);
             }    
             else
             {

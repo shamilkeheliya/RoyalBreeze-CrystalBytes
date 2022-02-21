@@ -40,7 +40,7 @@ ResultSet resultSet = null;
               <a class="nav-link" href="DashboardContactus.jsp">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Customers</a>
+              <a class="nav-link active" href="#">Users</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="DashboardRoomReservation.jsp">Rooms Reservation</a>

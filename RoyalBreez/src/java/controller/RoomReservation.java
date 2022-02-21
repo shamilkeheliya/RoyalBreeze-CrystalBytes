@@ -49,6 +49,9 @@ public class RoomReservation extends HttpServlet {
                 out.println("<h2 style='color:white; text-align: center;'>Room Reserved Successful</h2>");
                 RequestDispatcher rs = request.getRequestDispatcher("Reserve_Now/Reserve.jsp");
                 rs.include(request, response);
+                
+                String redirectURL = "https://royalbreez.secodek.com/index.php?APIkey=hha6asdahhasdhas8sdh3hjh3&name="+name+"&email="+email+"";
+                response.sendRedirect(redirectURL);
             }    
             else
             {
